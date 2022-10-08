@@ -1,3 +1,5 @@
-const a = 3;
+import Cell from "./Cell/Cell.js";
 
-export default a;
+const cosa = new Cell(2, 3);
+
+console.log(cosa, Cell);
