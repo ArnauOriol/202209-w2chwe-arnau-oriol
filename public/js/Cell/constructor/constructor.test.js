@@ -7,7 +7,7 @@ describe("Given the Cell class constructor method", () => {
       const number2 = 3;
       const expectedNewCell = {
         isAliveNextGeneration: undefined,
-        isAliveNow: undefined,
+        isAliveNow: true,
         yAxisPosition: 2,
         xAxisPosition: 3,
       };
@@ -16,6 +16,9 @@ describe("Given the Cell class constructor method", () => {
 
       expect(newCell.yAxisPosition).toBe(expectedNewCell.yAxisPosition);
       expect(newCell.xAxisPosition).toBe(expectedNewCell.xAxisPosition);
+      expect(typeof (newCell.isAliveNow === Boolean)).toStrictEqual(
+        typeof (expectedNewCell.isAliveNow === Boolean)
+      );
     });
   });
 });
