@@ -1,9 +1,3 @@
-const setToDeadOrAlive = () => {
-  const randomNumber = Math.floor(Math.random() * 10);
-  if (randomNumber > 4) {
-    return true;
-  }
-  return false;
-};
+const setToDeadOrAlive = () => Math.random() < 0.5;
 
 export default setToDeadOrAlive;
