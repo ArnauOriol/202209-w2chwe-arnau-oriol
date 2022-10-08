@@ -1,9 +1,8 @@
 import Cell from "../Cell/Cell.js";
 
-const board = [];
-let row = [];
-
 const buildBoard = (boardSize) => {
+  const board = [];
+  let row;
   for (let yAxis = 0; yAxis < boardSize; yAxis++) {
     row = [];
     for (let xAxis = 0; xAxis < boardSize; xAxis++) {
